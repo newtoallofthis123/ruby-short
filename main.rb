@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'socket'
-require_relative 'http'
-require_relative 'router'
-require_relative 'db'
+require_relative 'web/http'
+require_relative 'web/router'
+require_relative 'web/db'
 
 s = TCPServer.new 6969
 puts 'Binded to :6969'
